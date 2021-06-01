@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const db = require('../../db/connection');
-
+const app = express();
 // Get all parties
 app.get('/api/parties', (req, res) => {
     const sql = `SELECT * FROM parties`;
